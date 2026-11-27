@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="44" height="44">
+  <!-- Face -->
+  <circle cx="60" cy="60" r="50" fill="#FFD21E"/>
+  <!-- Eyes -->
+  <path d="M42 48c3-4 8-4 11 0" stroke="#000" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M67 48c3-4 8-4 11 0" stroke="#000" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Cheeks -->
+  <circle cx="36" cy="62" r="6" fill="#FFA500" opacity="0.4"/>
+  <circle cx="84" cy="62" r="6" fill="#FFA500" opacity="0.4"/>
+  <!-- Smile -->
+  <path d="M44 64c4 10 28 10 32 0" stroke="#000" stroke-width="4" stroke-linecap="round" fill="#D9381E"/>
+  <path d="M48 64c4 4 20 4 24 0" fill="#FFF"/>
+  <!-- Hug Hands -->
+  <path d="M22 64c-6 2-10 8-10 14 0 9 7 16 16 16 6 0 12-4 14-10l-12-8c-3-2-6-6-8-12z" fill="#FFD21E" stroke="#000" stroke-width="3"/>
+  <path d="M98 64c6 2 10 8 10 14 0 9-7 16-16 16-6 0-12-4-14-10l12-8c3-2 6-6 8-12z" fill="#FFD21E" stroke="#000" stroke-width="3"/>
+</svg>

@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Divya Chethana – AI Engineer. Portfolio showcasing projects in Machine Learning, Flutter, and modern web development."
+    />
+    <meta
+      name="keywords"
+      content="Divya Chethana, AI Engineer, Machine Learning, Flutter, Python, React, Portfolio, REVA University Bengaluru"
+    />
+    <meta name="author" content="Divya Chethana" />
+    <meta property="og:title" content="Divya Chethana | Portfolio" />
+    <meta property="og:description" content="AI Engineer — building intelligent real-world solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://divyachethana.vercel.app/" />
+    <meta property="og:image" content="profile.jpg" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Divya Chethana | Portfolio" />
+    <meta name="twitter:description" content="AI Engineer — building intelligent real-world solutions." />
+    <meta name="twitter:image" content="profile.jpg" />
+    <title>Divya Chethana | AI Engineer</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Google Fonts: Inter (closest to Product Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ==============================
+         NAVBAR
+         ============================== -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="nav-container">
+        <a href="#" class="nav-logo" aria-label="Home"
+          >DC<span class="logo-dot">.</span></a
+        >
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a
+              href="./Resume_2026.pdf"
+              target="_blank"
+              download="Resume_DivyaChethana"
+              class="nav-btn"
+            >
+              Resume ↓
+            </a>
+          </li>
+        </ul>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==============================
+         MAIN CONTENT
+         ============================== -->
+    <main id="main-content">
+      <!-- ==============================
+         HERO
+         ============================== -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <!-- Background Orbs -->
+        <div class="hero-bg-orbs" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+
+        <div class="hero-container">
+          <!-- Left: Avatar (static circular portrait) -->
+          <div class="hero-left fade-in-left">
+            <div class="avatar-wrapper">
+              <img
+                src="profile.jpg"
+                alt="Divya Chethana – AI & Data Science Developer"
+                class="avatar-img"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+
+          <!-- Right: Text + Code Editor -->
+          <div class="hero-right fade-in-right">
+            <p class="hero-greeting">Hello World! 👋 I'm</p>
+            <h1 class="hero-name">Divya Chethana</h1>
+
+            <div class="hero-role-wrapper" aria-live="polite">
+              <span class="hero-role-prefix">I am </span>
+              <span class="hero-role-typed" id="typed-text"></span>
+              <span class="cursor" aria-hidden="true">|</span>
+            </div>
+
+            <p class="hero-bio">
+              AI &amp; Data Science engineer passionate about
+              building intelligent, real-world solutions through code — from
+              mobile apps to deep learning pipelines.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn-primary" id="hero-cta-work"
+                >View My Work</a
+              >
+              <a href="#contact" class="btn-secondary" id="hero-cta-connect"
+                >Let's Connect</a
+              >
+            </div>
+
+            <!-- Mini Code Editor Container for 3D Effect -->
+            <div class="code-editor-container">
+              <div
+                class="code-editor"
+                role="img"
+                aria-label="Code snippet about Divya"
+              >
+                <div class="editor-header code-editor-item">
+                <div class="editor-dots" aria-hidden="true">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="editor-filename">divya.py</span>
+              </div>
+              <div class="editor-body code-editor-item">
+                <div class="code-line">
+                  <span class="ln">1</span>
+                  <span
+                    ><span class="kw">class</span>
+                    <span class="cls">DivyaChethana</span>:</span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="ln">2</span>
+                  <span
+                    >&nbsp;&nbsp;<span class="prop">role</span> =
+                    <span class="str"
+                      >"<span id="code-typed"></span
+                      ><span class="code-cursor" aria-hidden="true">|</span
+                      >"</span
+                    ></span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="ln">3</span>
+                  <span
+                    >&nbsp;&nbsp;<span class="prop">skills</span> = [<span
+                      class="str"
+                      >"AI"</span
+                    >, <span class="str">"ML"</span>,
+                    <span class="str">"Flutter"</span>]</span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="ln">4</span>
+                  <span
+                    >&nbsp;&nbsp;<span class="prop">college</span> =
+                    <span class="str">"REVA University, Bengaluru"</span></span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="ln">5</span>
+                  <span
+                    >&nbsp;&nbsp;<span class="prop">status</span> =
+                    <span class="str">"Open to Opportunities 🚀"</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+          <span>Scroll Down</span>
+        </div>
+      </section>
+
+      <!-- ==============================
+         ABOUT
+         ============================== -->
+      <section
+        class="about section"
+        id="about"
+        aria-label="About Divya Chethana"
+      >
+        <div class="container">
+          <header class="section-header fade-up">
+            <span class="section-tag">// about me</span>
+            <h2 class="section-title">Who Am I?</h2>
+          </header>
+
+          <div class="about-grid">
+            <!-- Card -->
+            <div class="about-card glass-card fade-up">
+              <div class="about-avatar-small">
+                <img
+                  src="profile.jpg"
+                  alt="Divya Chethana – profile photo"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Divya Chethana</h3>
+              <p class="about-title">AI Engineer</p>
+              <div class="about-badges">
+                <span class="badge">REVA University, Bengaluru</span>
+                <span class="badge">Batch of 2026</span>
+              </div>
+            </div>
+
+            <!-- Bio -->
+            <div class="about-content fade-up">
+              <p>
+                I am an
+                <strong>Artificial Intlligence Engineer </strong>with a strong foundataion in AI, and Machine Learning.I have completed my <strong>B.E in Artificial Intelligence & Data Science </strong>and am currently pursuing my <strong>M.Tech in Artificial Intelligence at RACE, REVA University.</strong>
+              </p>
+              <p>
+                I am passionate about building inntelligent, practical solutions tha address real-world challenges through technology.My experience includes AI-powered retail
+                systems, computer vision applications such as Yoga Pose detection, intelligent assistant
+                applications, and cross-platform mobile app development with Flutter.
+              </p>
+              <p>
+                I developed <strong>OrderNPick</strong> — a hyper-local
+                retail mobile application powered by AI-driven personalization,
+                invoice digitization, and queue-free express pickups.
+              </p>
+              <div class="about-links">
+                <a
+                  href="https://github.com/divyachethana"
+                  target="_blank"
+                  class="btn-outline"
+                  id="btn-github"
+                  aria-label="Visit GitHub profile"
+                >
+                  <img
+                    src="icons/github.svg"
+                    width="20"
+                    alt="GitHub"
+                  />
+                  GitHub Profile
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/divya-chethana-5b31a2269"
+                  target="_blank"
+                  class="btn-outline"
+                  id="btn-linkedin"
+                  aria-label="Visit LinkedIn profile"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
+                    width="20"
+                    alt=""
+                  />
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+         SKILLS
+         ============================== -->
+      <section
+        class="skills section"
+        id="skills"
+        aria-label="Skills and Technologies"
+      >
+        <div class="container">
+          <header class="section-header fade-up">
+            <span class="section-tag">// skills</span>
+            <h2 class="section-title">Tech Arsenal</h2>
+          </header>
+
+          <div class="skills-grid">
+            <!-- 1. AI, Deep Learning & LLMs (High Priority) -->
+            <div class="skill-category glass-card fade-up">
+              <h3 class="skill-cat-title">
+                <span class="cat-icon">🧠</span> AI, Deep Learning &amp; LLMs
+              </h3>
+              <div class="skill-logos">
+                <div class="skill-item">
+                  <img
+                    src="icons/pytorch.svg"
+                    alt="PyTorch"
+                  />
+                  <span>PyTorch</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                    alt="TensorFlow"
+                  />
+                  <span>TensorFlow</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg"
+                    alt="Keras"
+                  />
+                  <span>Keras</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/huggingface.svg"
+                    alt="Hugging Face"
+                  />
+                  <span>Hugging Face</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Machine Learning, Computer Vision & Data Science (High Priority) -->
+            <div class="skill-category glass-card fade-up">
+              <h3 class="skill-cat-title">
+                <span class="cat-icon">👁️</span> ML, Computer Vision &amp; Data Science
+              </h3>
+              <div class="skill-logos">
+                <div class="skill-item">
+                  <img
+                    src="icons/scikitlearn.svg"
+                    alt="Scikit-learn"
+                  />
+                  <span>Scikit-learn</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                    alt="OpenCV"
+                  />
+                  <span>OpenCV</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/mediapipe.svg"
+                    alt="MediaPipe"
+                  />
+                  <span>MediaPipe</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/pandas.svg"
+                    alt="Pandas"
+                  />
+                  <span>Pandas</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/numpy.svg"
+                    alt="NumPy"
+                  />
+                  <span>NumPy</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Core Programming & App Development -->
+            <div class="skill-category glass-card fade-up">
+              <h3 class="skill-cat-title">
+                <span class="cat-icon">💻</span> Programming &amp; App Development
+              </h3>
+              <div class="skill-logos">
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python"
+                  />
+                  <span>Python</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                    alt="Flutter"
+                  />
+                  <span>Flutter</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/java.svg"
+                    alt="Java"
+                  />
+                  <span>Java</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                    alt="C"
+                  />
+                  <span>C</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                  />
+                  <span>HTML5 / CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Tools, Cloud & Workflow -->
+            <div class="skill-category glass-card fade-up">
+              <h3 class="skill-cat-title">
+                <span class="cat-icon">🛠️</span> Tools, Cloud &amp; Workflow
+              </h3>
+              <div class="skill-logos">
+                <div class="skill-item">
+                  <img
+                    src="icons/github.svg"
+                    alt="GitHub"
+                  />
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/jupyter.svg"
+                    alt="Jupyter"
+                  />
+                  <span>Jupyter</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="icons/firebase.svg"
+                    alt="Firebase"
+                  />
+                  <span>Firebase</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                  />
+                  <span>MySQL</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB"
+                  />
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+         PROJECTS
+         ============================== -->
+      <section
+        class="projects section"
+        id="projects"
+        aria-label="Featured Projects"
+      >
+        <div class="container">
+          <header class="section-header fade-up">
+            <span class="section-tag">// projects</span>
+            <h2 class="section-title">What I've Built</h2>
+          </header>
+
+          <div class="projects-grid">
+            <!-- Project 1: Yoga Pose Detection -->
+            <article class="project-card glass-card fade-up" id="project-yoga">
+              <div class="project-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=600&h=300&fit=crop&q=80"
+                  alt="Yoga Pose Detection project"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <span class="project-year">Oct 2024</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  Yoga Pose Detection using Deep Learning
+                </h3>
+                <p class="project-desc">
+                  Real-time yoga pose identification &amp; classification using
+                  a deep learning model. Integrated OpenCV for live detection
+                  with end-to-end training pipeline.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">OpenCV</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/divyachethana/Yoga_pose_detection"
+                    target="_blank"
+                    class="btn-project"
+                    id="proj1-link"
+                    >View Code →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: To-Do App -->
+            <article class="project-card glass-card fade-up" id="project-todo">
+              <div class="project-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=300&fit=crop&q=80"
+                  alt="To-Do List Application"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <span class="project-year">Oct 2024</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">To-Do List Application</h3>
+                <p class="project-desc">
+                  Desktop task management tool with a clean GUI built using
+                  PyQt5, improving task tracking efficiency by 15% through smart
+                  reminders.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">PyQt5</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    class="btn-project"
+                    id="proj2-link"
+                    >View Code →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: OrderNPick -->
+            <article
+              class="project-card glass-card fade-up"
+              id="project-retail"
+            >
+              <div class="project-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=300&fit=crop&q=80"
+                  alt="OrderNPick – Smart Retail Application"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <span class="project-year">2025</span>
+                  <span class="badge-completed">✓ Completed</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">OrderNPick – Smart Retail Application</h3>
+                <p class="project-desc">
+                  A hyper-local retail mobile application built with Flutter that streamlines shopping
+                  through AI-driven personalization, invoice digitization, smart inventory, and queue-free express pickups.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">FastAPI</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">NLP</span>
+                  <span class="tech-badge">Scikit-learn</span>
+                </div>
+                <div class="project-links">
+                  <span class="app-tag">📱 Mobile Application</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+         CONTACT
+         ============================== -->
+      <section class="contact section" id="contact" aria-label="Contact Divya">
+        <div class="container">
+          <header class="section-header fade-up">
+            <span class="section-tag">// contact</span>
+            <h2 class="section-title">Let's Talk</h2>
+          </header>
+
+          <div class="contact-grid">
+            <!-- Left: Form -->
+            <div class="contact-form-wrapper glass-card fade-up">
+              <h3>Send Me a Message</h3>
+              <form
+                class="contact-form"
+                id="contact-form"
+                onsubmit="handleFormSubmit(event)"
+                novalidate
+              >
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="e.g. Rahul Sharma"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="mobile">Mobile Number</label>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="+91 XXXXX XXXXX"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Hey Divya, I'd love to connect..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submit-btn">
+                  <span>Send Message</span>
+                  <span>🚀</span>
+                </button>
+              </form>
+            </div>
+
+            <!-- Right: Emoji + Info -->
+            <div class="contact-info fade-up">
+              <div
+                class="emoji-section"
+                aria-label="Interactive greeting. Click to change emoji."
+              >
+                <span
+                  class="emoji-face"
+                  id="emoji-face"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Click me!"
+                  >👩‍💻</span
+                >
+                <p class="emoji-text" id="emoji-text">
+                  Let's build something amazing together!
+                </p>
+              </div>
+
+              <address class="contact-details" aria-label="Contact details">
+                <div class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">📧</span>
+                  <a href="mailto:divyachethana.4w@gmail.com">divyachethana.4w@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">📞</span>
+                  <a href="tel:+918352393474">+91 8431713331</a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">📍</span>
+                  <span
+                    >REVA University, Yelahanka, Bengaluru –
+                    560064</span
+                  >
+                </div>
+              </address>
+
+              <div class="social-links" aria-label="Social media links">
+                <a
+                  href="https://www.linkedin.com/in/divya-chethana-5b31a2269"
+                  target="_blank"
+                  class="social-btn"
+                  id="social-linkedin"
+                  title="LinkedIn"
+                  aria-label="LinkedIn Profile"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
+                    alt="LinkedIn"
+                  />
+                </a>
+                <a
+                  href="https://github.com/divyachethana"
+                  target="_blank"
+                  class="social-btn"
+                  id="social-github"
+                  title="GitHub"
+                  aria-label="GitHub Profile"
+                >
+                  <img
+                    src="icons/github.svg"
+                    alt="GitHub"
+                  />
+                </a>
+                <!-- <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="social-btn"
+                  id="social-instagram"
+                  title="Instagram"
+                  aria-label="Instagram Profile"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/174/174855.png"
+                    alt="Instagram"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  class="social-btn"
+                  id="social-twitter"
+                  title="Twitter / X"
+                  aria-label="Twitter Profile"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png"
+                    alt="Twitter"
+                  />
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- end #main-content -->
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+    <footer class="footer" aria-label="Site footer">
+      <div class="footer-container">
+        <div class="footer-logo" aria-label="Divya Chethana">
+          DC<span class="logo-dot">.</span>
+        </div>
+        <p class="footer-text">
+          © 2026 Divya Chethana. Built with ❤️ &amp; Pure HTML/CSS/JS
+        </p>
+        <nav class="footer-socials" aria-label="Footer social links">
+          <a
+            href="https://www.linkedin.com/in/divya-chethana-5b31a2269"
+            target="_blank"
+            class="footer-social-link"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://github.com/divyachethana"
+            target="_blank"
+            class="footer-social-link"
+            title="GitHub"
+            aria-label="GitHub"
+          >
+            <img
+              src="icons/github.svg"
+              alt="GitHub"
+            />
+          </a>
+          <!-- <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer-social-link"
+            title="Instagram"
+            aria-label="Instagram"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/174/174855.png"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="footer-social-link"
+            title="Twitter"
+            aria-label="Twitter"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png"
+              alt="Twitter"
+            />
+          </a> -->
+        </nav>
+        <a
+          href="#"
+          class="back-to-top"
+          id="back-to-top"
+          aria-label="Back to top"
+          >↑ Back to Top</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
